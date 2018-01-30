@@ -1,4 +1,4 @@
 # V2A
-Cross-platform framework for Visual-Auditory substitution
+Cross-platform framework for Visual-to-Auditory substitution
 
 Test
