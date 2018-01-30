@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043A2CDC1FD3E5DC00940320 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A2CDB1FD3E5DC00940320 /* AppDelegate.m */; };
+		043A2CE21FD3E5DC00940320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A2CE01FD3E5DC00940320 /* Main.storyboard */; };
+		043A2CE41FD3E5DC00940320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043A2CE31FD3E5DC00940320 /* Assets.xcassets */; };
+		043A2CE71FD3E5DD00940320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A2CE51FD3E5DD00940320 /* LaunchScreen.storyboard */; };
+		043A2CEA1FD3E5DD00940320 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A2CE91FD3E5DD00940320 /* main.m */; };
+		043A2CFD1FD410AD00940320 /* V2AViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 043A2CFC1FD410AD00940320 /* V2AViewController.mm */; };
+		043A2D021FD4115300940320 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 043A2CFE1FD4115300940320 /* UIImage+OpenCV.mm */; };
+		043A2D051FD411B000940320 /* GPUImageVideoCameraRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A2D041FD411B000940320 /* GPUImageVideoCameraRGB.m */; };
+		043A2D0A1FD41C3700940320 /* V2AProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043A2D091FD41C3700940320 /* V2AProcessor.cpp */; };
+		043A2D0D1FD4330500940320 /* V2AAuxiliary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043A2D0B1FD4330500940320 /* V2AAuxiliary.cpp */; };
+		043A2D0F1FD434BF00940320 /* params.json in Resources */ = {isa = PBXBuildFile; fileRef = 043A2D0E1FD434BE00940320 /* params.json */; };
+		043A2D121FD438D400940320 /* ExtractRGB.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 043A2D111FD438D400940320 /* ExtractRGB.fsh */; };
+		043A2D141FD4393700940320 /* ExtractY.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 043A2D131FD4393700940320 /* ExtractY.fsh */; };
+		043A2D391FD66D1800940320 /* V2ASoundGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043A2D371FD66D1800940320 /* V2ASoundGenerator.cpp */; };
+		043A2D3F1FD677B300940320 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043A2D3E1FD677AA00940320 /* OpenAL.framework */; };
+		043A2D411FD6901900940320 /* V2AiOS_staff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 043A2D401FD6901900940320 /* V2AiOS_staff.mm */; };
+		0444B697200223A10005E53C /* GPUImagePerspectiveTransformCardboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444B696200223A10005E53C /* GPUImagePerspectiveTransformCardboard.m */; };
+		049EDB9A1FE699B900E0AC38 /* GPUImageGraphicsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EDB991FE699B900E0AC38 /* GPUImageGraphicsFilter.m */; };
+		47E943361CA4637844BA37F2 /* Pods_V2A.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B689C69DEAF178C43A7E6298 /* Pods_V2A.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043A2CD71FD3E5DC00940320 /* V2A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2A.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043A2CDA1FD3E5DC00940320 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		043A2CDB1FD3E5DC00940320 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		043A2CDD1FD3E5DC00940320 /* V2AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V2AViewController.h; sourceTree = "<group>"; };
+		043A2CE11FD3E5DC00940320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043A2CE31FD3E5DC00940320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043A2CE61FD3E5DD00940320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043A2CE81FD3E5DD00940320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043A2CE91FD3E5DD00940320 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		043A2CFC1FD410AD00940320 /* V2AViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = V2AViewController.mm; sourceTree = "<group>"; };
+		043A2CFE1FD4115300940320 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "UIImage+OpenCV.mm"; path = "V2A/utility/UIImage+OpenCV.mm"; sourceTree = SOURCE_ROOT; };
+		043A2D001FD4115300940320 /* GPUImageVideoCameraRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageVideoCameraRGB.h; path = V2A/utility/GPUImageVideoCameraRGB.h; sourceTree = SOURCE_ROOT; };
+		043A2D011FD4115300940320 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+OpenCV.h"; path = "V2A/utility/UIImage+OpenCV.h"; sourceTree = SOURCE_ROOT; };
+		043A2D041FD411B000940320 /* GPUImageVideoCameraRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageVideoCameraRGB.m; path = V2A/utility/GPUImageVideoCameraRGB.m; sourceTree = SOURCE_ROOT; };
+		043A2D071FD41B6A00940320 /* V2AError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2AError.h; sourceTree = "<group>"; };
+		043A2D081FD41BD200940320 /* V2AProcessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = V2AProcessor.h; sourceTree = "<group>"; };
+		043A2D091FD41C3700940320 /* V2AProcessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = V2AProcessor.cpp; sourceTree = "<group>"; };
+		043A2D0B1FD4330500940320 /* V2AAuxiliary.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = V2AAuxiliary.cpp; sourceTree = "<group>"; };
+		043A2D0C1FD4330500940320 /* V2AAuxiliary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V2AAuxiliary.h; sourceTree = "<group>"; };
+		043A2D0E1FD434BE00940320 /* params.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = params.json; sourceTree = "<group>"; };
+		043A2D111FD438D400940320 /* ExtractRGB.fsh */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; path = ExtractRGB.fsh; sourceTree = "<group>"; };
+		043A2D131FD4393700940320 /* ExtractY.fsh */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; path = ExtractY.fsh; sourceTree = "<group>"; };
+		043A2D371FD66D1800940320 /* V2ASoundGenerator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = V2ASoundGenerator.cpp; sourceTree = "<group>"; };
+		043A2D381FD66D1800940320 /* V2ASoundGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V2ASoundGenerator.h; sourceTree = "<group>"; };
+		043A2D3C1FD6776400940320 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		043A2D3E1FD677AA00940320 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		043A2D401FD6901900940320 /* V2AiOS_staff.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = V2AiOS_staff.mm; sourceTree = "<group>"; };
+		043A2D421FD6903000940320 /* V2AiOS_staff.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = V2AiOS_staff.h; sourceTree = "<group>"; };
+		0444B695200223820005E53C /* GPUImagePerspectiveTransformCardboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImagePerspectiveTransformCardboard.h; sourceTree = "<group>"; };
+		0444B696200223A10005E53C /* GPUImagePerspectiveTransformCardboard.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = GPUImagePerspectiveTransformCardboard.m; sourceTree = "<group>"; };
+		049EDB991FE699B900E0AC38 /* GPUImageGraphicsFilter.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = GPUImageGraphicsFilter.m; sourceTree = "<group>"; };
+		049EDB9B1FE699DA00E0AC38 /* GPUImageGraphicsFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = GPUImageGraphicsFilter.h; sourceTree = "<group>"; };
+		588C33445B3F3FEC2609DDED /* Pods-V2A.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2A.debug.xcconfig"; path = "Pods/Target Support Files/Pods-V2A/Pods-V2A.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1A5B628E06E95BC95CC57C /* Pods-V2A.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2A.release.xcconfig"; path = "Pods/Target Support Files/Pods-V2A/Pods-V2A.release.xcconfig"; sourceTree = "<group>"; };
+		B689C69DEAF178C43A7E6298 /* Pods_V2A.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_V2A.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043A2CD41FD3E5DC00940320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043A2D3F1FD677B300940320 /* OpenAL.framework in Frameworks */,
+				47E943361CA4637844BA37F2 /* Pods_V2A.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043A2CCE1FD3E5DC00940320 = {
+			isa = PBXGroup;
+			children = (
+				043A2CD91FD3E5DC00940320 /* V2A */,
+				043A2CD81FD3E5DC00940320 /* Products */,
+				657FA701AF2BE1DDD109DFED /* Pods */,
+				ED645A578F730D47AA7446DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		043A2CD81FD3E5DC00940320 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043A2CD71FD3E5DC00940320 /* V2A.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043A2CD91FD3E5DC00940320 /* V2A */ = {
+			isa = PBXGroup;
+			children = (
+				043A2D0E1FD434BE00940320 /* params.json */,
+				043A2D061FD4198900940320 /* core */,
+				043A2D101FD4385000940320 /* shaders */,
+				043A2CFB1FD4105600940320 /* utility */,
+				043A2CDA1FD3E5DC00940320 /* AppDelegate.h */,
+				043A2CDB1FD3E5DC00940320 /* AppDelegate.m */,
+				043A2CDD1FD3E5DC00940320 /* V2AViewController.h */,
+				043A2CFC1FD410AD00940320 /* V2AViewController.mm */,
+				043A2CE01FD3E5DC00940320 /* Main.storyboard */,
+				043A2CE31FD3E5DC00940320 /* Assets.xcassets */,
+				043A2CE51FD3E5DD00940320 /* LaunchScreen.storyboard */,
+				043A2CE81FD3E5DD00940320 /* Info.plist */,
+				043A2CE91FD3E5DD00940320 /* main.m */,
+			);
+			path = V2A;
+			sourceTree = "<group>";
+		};
+		043A2CFB1FD4105600940320 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				043A2D001FD4115300940320 /* GPUImageVideoCameraRGB.h */,
+				043A2D041FD411B000940320 /* GPUImageVideoCameraRGB.m */,
+				043A2D011FD4115300940320 /* UIImage+OpenCV.h */,
+				043A2CFE1FD4115300940320 /* UIImage+OpenCV.mm */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		043A2D061FD4198900940320 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				043A2D071FD41B6A00940320 /* V2AError.h */,
+				043A2D091FD41C3700940320 /* V2AProcessor.cpp */,
+				043A2D081FD41BD200940320 /* V2AProcessor.h */,
+				043A2D0B1FD4330500940320 /* V2AAuxiliary.cpp */,
+				043A2D0C1FD4330500940320 /* V2AAuxiliary.h */,
+				043A2D371FD66D1800940320 /* V2ASoundGenerator.cpp */,
+				043A2D381FD66D1800940320 /* V2ASoundGenerator.h */,
+				043A2D401FD6901900940320 /* V2AiOS_staff.mm */,
+				043A2D421FD6903000940320 /* V2AiOS_staff.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		043A2D101FD4385000940320 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				043A2D111FD438D400940320 /* ExtractRGB.fsh */,
+				043A2D131FD4393700940320 /* ExtractY.fsh */,
+				049EDB991FE699B900E0AC38 /* GPUImageGraphicsFilter.m */,
+				049EDB9B1FE699DA00E0AC38 /* GPUImageGraphicsFilter.h */,
+				0444B696200223A10005E53C /* GPUImagePerspectiveTransformCardboard.m */,
+				0444B695200223820005E53C /* GPUImagePerspectiveTransformCardboard.h */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		657FA701AF2BE1DDD109DFED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				588C33445B3F3FEC2609DDED /* Pods-V2A.debug.xcconfig */,
+				5E1A5B628E06E95BC95CC57C /* Pods-V2A.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED645A578F730D47AA7446DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				043A2D3E1FD677AA00940320 /* OpenAL.framework */,
+				043A2D3C1FD6776400940320 /* AVFoundation.framework */,
+				B689C69DEAF178C43A7E6298 /* Pods_V2A.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043A2CD61FD3E5DC00940320 /* V2A */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043A2CED1FD3E5DD00940320 /* Build configuration list for PBXNativeTarget "V2A" */;
+			buildPhases = (
+				78CD41B01A061DA89BE2D324 /* [CP] Check Pods Manifest.lock */,
+				043A2CD31FD3E5DC00940320 /* Sources */,
+				043A2CD41FD3E5DC00940320 /* Frameworks */,
+				043A2CD51FD3E5DC00940320 /* Resources */,
+				ECFF4D3C7ED7EC78F73E5979 /* [CP] Embed Pods Frameworks */,
+				5AA7C493972AF64D0B8FA273 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = V2A;
+			productName = V2A;
+			productReference = 043A2CD71FD3E5DC00940320 /* V2A.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043A2CCF1FD3E5DC00940320 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = kopel;
+				TargetAttributes = {
+					043A2CD61FD3E5DC00940320 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 043A2CD21FD3E5DC00940320 /* Build configuration list for PBXProject "V2A" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043A2CCE1FD3E5DC00940320;
+			productRefGroup = 043A2CD81FD3E5DC00940320 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043A2CD61FD3E5DC00940320 /* V2A */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043A2CD51FD3E5DC00940320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043A2D141FD4393700940320 /* ExtractY.fsh in Resources */,
+				043A2D121FD438D400940320 /* ExtractRGB.fsh in Resources */,
+				043A2CE71FD3E5DD00940320 /* LaunchScreen.storyboard in Resources */,
+				043A2CE41FD3E5DC00940320 /* Assets.xcassets in Resources */,
+				043A2CE21FD3E5DC00940320 /* Main.storyboard in Resources */,
+				043A2D0F1FD434BF00940320 /* params.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AA7C493972AF64D0B8FA273 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-V2A/Pods-V2A-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78CD41B01A061DA89BE2D324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-V2A-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECFF4D3C7ED7EC78F73E5979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-V2A/Pods-V2A-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-V2A/Pods-V2A-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043A2CD31FD3E5DC00940320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043A2D021FD4115300940320 /* UIImage+OpenCV.mm in Sources */,
+				043A2D411FD6901900940320 /* V2AiOS_staff.mm in Sources */,
+				043A2CFD1FD410AD00940320 /* V2AViewController.mm in Sources */,
+				043A2D051FD411B000940320 /* GPUImageVideoCameraRGB.m in Sources */,
+				043A2CEA1FD3E5DD00940320 /* main.m in Sources */,
+				043A2D0A1FD41C3700940320 /* V2AProcessor.cpp in Sources */,
+				043A2CDC1FD3E5DC00940320 /* AppDelegate.m in Sources */,
+				043A2D0D1FD4330500940320 /* V2AAuxiliary.cpp in Sources */,
+				043A2D391FD66D1800940320 /* V2ASoundGenerator.cpp in Sources */,
+				049EDB9A1FE699B900E0AC38 /* GPUImageGraphicsFilter.m in Sources */,
+				0444B697200223A10005E53C /* GPUImagePerspectiveTransformCardboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		043A2CE01FD3E5DC00940320 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043A2CE11FD3E5DC00940320 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043A2CE51FD3E5DD00940320 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043A2CE61FD3E5DD00940320 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043A2CEB1FD3E5DD00940320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		043A2CEC1FD3E5DD00940320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043A2CEE1FD3E5DD00940320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588C33445B3F3FEC2609DDED /* Pods-V2A.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NX3B54DA2;
+				INFOPLIST_FILE = V2A/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kopel.V2A;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043A2CEF1FD3E5DD00940320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1A5B628E06E95BC95CC57C /* Pods-V2A.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NX3B54DA2;
+				INFOPLIST_FILE = V2A/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kopel.V2A;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043A2CD21FD3E5DC00940320 /* Build configuration list for PBXProject "V2A" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043A2CEB1FD3E5DD00940320 /* Debug */,
+				043A2CEC1FD3E5DD00940320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043A2CED1FD3E5DD00940320 /* Build configuration list for PBXNativeTarget "V2A" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043A2CEE1FD3E5DD00940320 /* Debug */,
+				043A2CEF1FD3E5DD00940320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043A2CCF1FD3E5DC00940320 /* Project object */;
+}
